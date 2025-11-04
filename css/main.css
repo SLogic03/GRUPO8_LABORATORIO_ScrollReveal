@@ -1,0 +1,114 @@
+:root {
+    --harley-orange: #f60;
+    --harley-black: #111;
+    --harley-white: #fff;
+    --harley-gray: #ccc;
+    --font-heading: 'Oswald', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-body);
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/fondoHarley.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--harley-white);
+}
+
+.logo-container {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.logo-container:hover {
+    background-color: rgba(66, 66, 66, 0.8);
+}
+
+.logo {
+    height: 60px;
+    display: block;
+}
+
+h1 {
+    color: var(--harley-orange);
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    font-family: var(--font-heading);
+    letter-spacing: 1px; 
+}
+
+.text-description {
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    color: var(--harley-gray);
+}
+
+.form-control {
+    background: transparent !important;
+    color: var(--harley-white) !important;
+    border: 2px solid var(--harley-white) !important;
+    padding: 20px 10px !important;
+    font-size: 1.1em !important;
+    font-family: var(--font-body);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 10px var(--harley-orange) !important;
+    border-color: var(--harley-orange) !important;
+}
+
+.form-control::placeholder {
+  color: var(--harley-gray);
+  opacity: 1;
+}
+
+.btn-harley {
+    background-color: var(--harley-orange);
+    color: var(--harley-black);
+    font-weight: 700;
+    text-transform: uppercase;
+    
+    padding: 12px 35px;
+    
+    border: 2px solid var(--harley-orange);
+    transition: all 0.3s ease;
+
+    font-family: var(--font-heading);
+    letter-spacing: 1.5px;
+    font-size: 1em;
+}
+
+.btn-harley:hover {
+    background-color: transparent;
+    color: var(--harley-orange);
+    border: 2px solid var(--harley-orange);
+}
+
+a .fab {
+    color: var(--harley-white);
+    font-size: 28px;
+    margin: 0 12px;
+    transition: color 0.3s ease;
+}
+
+a:hover .fab {
+    color: var(--harley-orange);
+}
+
+@media (min-width: 768px) {
+    .row {
+        align-items: center;
+    }
+}
