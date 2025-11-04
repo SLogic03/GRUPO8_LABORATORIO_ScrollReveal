@@ -8,45 +8,25 @@
 }
 
 body, html {
-    height: 100%;
     padding: 0;
     margin: 0;
     font-family: var(--font-body);
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/fondoHarley.png");
+    background: linear-gradient(rgba(35, 34, 34, 0.7), rgba(0, 0, 0, 0.7)), url("../img/fondoHarley.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: var(--harley-white);
 }
 
-.logo-container {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 8px;
-    z-index: 10;
-    transition: background-color 0.3s ease;
-}
-
-.logo-container:hover {
-    background-color: rgba(66, 66, 66, 0.8);
-}
-
-.logo {
-    height: 60px;
-    display: block;
-}
-
 h1 {
     color: var(--harley-orange);
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     font-family: var(--font-heading);
-    letter-spacing: 1px; 
+    letter-spacing: 1px;
+    font-size: 5.5em !important;
 }
 
 .text-description {
@@ -77,17 +57,12 @@ h1 {
 .btn-harley {
     background-color: var(--harley-orange);
     color: var(--harley-black);
-    font-weight: 700;
+    font-weight: bold;
     text-transform: uppercase;
-    
-    padding: 12px 35px;
-    
+    padding: 15px 30px;
     border: 2px solid var(--harley-orange);
     transition: all 0.3s ease;
-
     font-family: var(--font-heading);
-    letter-spacing: 1.5px;
-    font-size: 1em;
 }
 
 .btn-harley:hover {
@@ -107,8 +82,75 @@ a:hover .fab {
     color: var(--harley-orange);
 }
 
-@media (min-width: 768px) {
-    .row {
-        align-items: center;
-    }
+.navbar {
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.navbar .nav-link {
+    color: var(--harley-white) !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+    font-family: var(--font-heading);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--harley-orange) !important;
+}
+
+section {
+    padding: 80px 0;
+    overflow-x: hidden;
+}
+
+#home {
+    padding: 0;
+}
+
+.section-title {
+    color: var(--harley-orange);
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+
+.bg-dark-section {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card-tipo {
+    text-align: center;
+    background-color: var(--harley-black);
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.card-tipo h3 {
+    color: var(--harley-orange);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--font-heading);
+}
+
+.card-form {
+    background: transparent;
+    border: none;
+}
+
+#contacto .section-title {
+    font-size: 3.5em;
+}
+
+#contacto .form-group textarea {
+    height: 120px;
+    min-height: 120px;
+    padding: 15px 10px !important;
 }
